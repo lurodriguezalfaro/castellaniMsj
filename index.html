@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Castellani Joyeria</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Castellani Joyería</a>
+    </div>
+  </nav>
+
+  <div class="container" id="main">
+    <div class="main-form">
+      <div class="row">
+        <div class="col-md-12">
+          <fieldset>
+            <legend>Completa los datos del cliente</legend>
+            <form action="">
+              <div class="form-group">
+                <label>Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombreCompleto" required>
+              </div> <!-- /Nombre completo -->
+              <div class="form-group">
+                <label>Numero de contrato</label>
+                <input type="number" class="form-control" id="contrato" placeholder="36376" required>
+              </div> <!-- /Contrato -->
+              <div class="form-group">
+                <label>Fecha de elaboración</label>
+                <input type="date" class="form-control date-picker" id="fechaE" required>
+              </div> <!-- /Fecha Elaboracion -->
+              <div class="form-group">
+                <label>Monto para retirar</label>
+                <input type="number" class="form-control" id="retirar" placeholder="1000" required>
+              </div> <!-- /Retirar -->
+              <div class="form-group">
+                <label>Monto para renovar</label>
+                <input type="number" class="form-control" id="renovar" placeholder="2000" required>
+              </div> <!-- /Renovar -->
+              <div class="form-group">
+                <label>Monto con bonificación</label>
+                <input type="number" class="form-control" id="bonificar" placeholder="1500" required>
+              </div> <!-- /Bonificar -->
+              <div class="form-group">
+                <label>Fecha límite de bonificación</label>
+                <input type="date" class="form-control date-picker" id="fechaB" required>
+              </div> <!-- /Fecha Bonificación -->
+              <div class="form-group">
+                <label>Número de celular</label>
+                <input type="number" class="form-control" id="celular" placeholder="2613474636" required>
+              </div> <!-- /Celular -->
+              <div onclick="enviarMensaje();" id="enviar" class="btn btn-primary btn-block">Enviar WhatsApp</div>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
+  <footer class="footer container-fluid bg-primary">
+    <div class="col-md-6 text-center">
+      <p> <span class="glyphicon glyphicon-copyright-mark"></span> Realizado por: <a
+          href="http://linkedin.com/in/lurodriguezalfaro" target="_blank">Lucila Rodriguez Alfaro</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/enviarWhatsApp.js"> </script>
+
+</body>
+
+</html>
